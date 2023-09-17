@@ -5,6 +5,12 @@
 #### 数据库创建
 
 ```sql
+-- 创建数据库
+CREATE DATABASE IF NOT EXISTS `test` 
+    CHARACTER SET utf8 COLLATE utf8_general_ci;
+```
+
+```sql
 -- 创建用户表
 CREATE TABLE user(
     id INT,
@@ -15,7 +21,7 @@ CREATE TABLE user(
 
 ```sql
 -- 插入数据
-INSERT INTO tb_user(id, name, age)
+INSERT INTO user(id, name, age)
 VALUES(1001, '张大头', 22),(1002, '李大头', 23);
 ```
 
